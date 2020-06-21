@@ -10,7 +10,7 @@ IPAddress IP;
 void setup() {
 
   Serial.begin(115200);
-  EEPROM.begin(500); 
+  EEPROM.begin(512); 
   Serial.println(" ");
   Serial.println("Ready for Commands erase,read,write");
 }
@@ -97,7 +97,7 @@ void  write_EEPROM(){
 void erase_EEPROM(){
   Serial.println(" ");
   Serial.println("Erase All EEPROM with 0 ");
-  for (int i=0;i<4096;i++){
+  for (int i=0;i<512;i++){
     EEPROM.write(i,0);
   } 
   EEPROM.commit();
