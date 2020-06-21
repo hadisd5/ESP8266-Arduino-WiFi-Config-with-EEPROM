@@ -1,1 +1,2 @@
-# Read-write ESP8266-EEPROM-for-saving-WiFi-SSID-Password-IP-Address
+# Read and write data from EEPROM to save Wi-Fi password, SSID, IP-Address
+
